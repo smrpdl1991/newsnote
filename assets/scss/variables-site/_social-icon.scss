@@ -1,0 +1,291 @@
+.social-links {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+
+    &:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+
+    a {
+      color: $white_color;
+      width: 30px;
+      line-height: 30px;
+      height: 30px;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  a {
+    background-color: #000;
+  }
+
+  a[href*="facebook.com"] {
+    background-color: #3b5998;
+  }
+
+  a[href*="twitter.com"] {
+    background-color: #00aced;
+  }
+
+  a[href*="plus.google.com"],
+  a[href*="google.com"] {
+    background-color: #c13c31;
+  }
+
+  a[href*="/feed/"] {
+    background-color: #dc622c;
+  }
+
+  a[href*="wordpress.org"] {
+    background-color: #21759b;
+  }
+
+  a[href*="github.com"] {
+    background-color: #4183c4;
+  }
+
+  a[href*="linkedin.com"] {
+    background-color: #007bb6;
+  }
+
+  a[href*="pinterest.com"] {
+    background-color: #cb2027;
+  }
+
+  a[href*="flickr.com"] {
+    background-color: #ff0084;
+  }
+
+  a[href*="vimeo.com"] {
+    background-color: #aad450;
+  }
+
+  a[href*="youtube.com"] {
+    background-color: #b00;
+  }
+
+  a[href*="instagram.com"] {
+    background-color: #517fa4;
+  }
+
+  a[href*="dribbble.com"] {
+    background-color: #ea4c89;
+  }
+
+  a[href*="skype.com"] {
+    background-color: #12a5f4;
+  }
+
+  a[href*="digg.com"] {
+    background-color: #333;
+  }
+
+  a[href*="codepen.io"] {
+    background-color: #000;
+  }
+
+  a[href*="respanit.com"] {
+    background-color: #ff4500;
+  }
+
+  a[href*="mailto:"] {
+    background-color: #1d62f0;
+  }
+
+  a[href*="foursquare.com"] {
+    background-color: #f94877;
+  }
+
+  a[href*="stumbleupon.com"] {
+    background-color: #eb4924;
+  }
+
+  a[href*="twitch.tv"] {
+    background-color: #6441a5;
+  }
+
+  a[href*="tumblr.com"] {
+    background-color: #32506d;
+  }
+
+  a[href*="foursquare.com"] {
+    background-color: #f94877;
+  }
+
+  a[href*="stumbleupon.com"] {
+    background-color: #eb4924;
+  }
+
+  a[href*="twitch.tv"] {
+    background-color: #6441a5;
+  }
+
+  a[href*="tumblr.com"] {
+    background-color: #32506d;
+  }
+
+  a[href*="soundcloud.com"] {
+    background-color: #f50;
+  }
+
+  a[href*="wordpress.org"] {
+    background-color: #21759b;
+  }
+
+  a[href*="jsfispanle.net"] {
+    background-color: #4679bd;
+  }
+
+  a[href*="tripadvisor.com"] {
+    background-color: #86c171;
+  }
+
+  a[href*="foursquare.com"] {
+    background-color: #2d5be3;
+  }
+
+  a[href*="angel.co"] {
+    background-color: #000;
+  }
+
+  a[href*="slack.com"] {
+    background-color: #56b68b;
+  }
+
+  a {
+    height: 40px;
+    display: block;
+  }
+  a:before {
+    font-family: FontAwesome;
+    font-size: 16px;
+  }
+  a[href*="facebook.com"]::before {
+    content: "\f09a";
+  }
+
+  a[href*="twitter.com"]::before {
+    content: "\f099";
+  }
+
+  a[href*="linkedin.com"]::before {
+    content: "\f0e1";
+  }
+
+  a[href*="plus.google.com"]::before {
+    content: "\f0d5";
+  }
+
+  a[href*="youtube.com"]::before {
+    content: "\f167";
+  }
+
+  a[href*="dribbble.com"]::before {
+    content: "\f17d";
+  }
+
+  a[href*="pinterest.com"]::before {
+    content: "\f0d2";
+  }
+
+  a[href*="bitbucket.org"]::before {
+    content: "\f171";
+  }
+
+  a[href*="github.com"]::before {
+    content: "\f113";
+  }
+
+  a[href*="codepen.io"]::before {
+    content: "\f1cb";
+  }
+
+  a[href*="flickr.com"]::before {
+    content: "\f16e";
+  }
+
+  a[href$="feed.com"]::before {
+    content: "\f09e";
+  }
+
+  a[href*="foursquare.com"]::before {
+    content: "\f180";
+  }
+
+  a[href*="instagram.com"]::before {
+    content: "\f16d";
+  }
+
+  a[href*="tumblr.com"]::before {
+    content: "\f173";
+  }
+
+  a[href*="respanit.com"]::before {
+    content: "\f1a1";
+  }
+
+  a[href*="vimeo.com"]::before {
+    content: "\f194";
+  }
+
+  a[href*="digg.com"]::before {
+    content: "\f1a6";
+  }
+
+  a[href*="twitch.tv"]::before {
+    content: "\f1e8";
+  }
+
+  a[href*="stumbleupon.com"]::before {
+    content: "\f1a4";
+  }
+
+  a[href*="delicious.com"]::before {
+    content: "\f1a5";
+  }
+
+  a[href*="mailto:"]::before {
+    content: "\f0e0";
+  }
+
+  a[href*="soundcloud.com"]::before {
+    content: "\f1be";
+  }
+
+  a[href*="wordpress.org"]::before {
+    content: "\f19a";
+  }
+
+  a[href*="wordpress.com"]::before {
+    content: "\f19a";
+  }
+
+  a[href*="jsfispanle.net"]::before {
+    content: "\f1cc";
+  }
+
+  a[href*="tripadvisor.com"]::before {
+    content: "\f262";
+  }
+
+  a[href*="foursquare.com"]::before {
+    content: "\f180";
+  }
+
+  a[href*="angel.co"]::before {
+    content: "\f209";
+  }
+
+  a[href*="slack.com"]::before {
+    content: "\f198";
+  }
+}

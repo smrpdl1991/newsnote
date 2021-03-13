@@ -1,0 +1,347 @@
+.main-navigation ul li.flexMenu-viewMore a {
+  background-color: #eee;
+}
+body .main-navigation ul li.flexMenu-viewMore:before {
+  content: none;
+}
+.main-navigation ul li.flexMenu-viewMore {
+  margin-right: 0;
+}
+.main-navigation,
+.midle-header-right {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  position: relative;
+
+  & > ul > li > a {
+    &:before,
+    &:after {
+      display: inline-block;
+      opacity: 0;
+      font-size: 16px;
+      transition: transform 0.3s, opacity 0.2s;
+    }
+
+    &:before {
+      margin-right: 5px;
+      content: "[";
+      transform: translateX(20px);
+    }
+
+    &:after {
+      margin-left: 5px;
+      content: "]";
+      transform: translateX(-20px);
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    &.sub-menu {
+      position: absolute;
+      line-height: 1.5;
+      opacity: 0;
+      visibility: hidden;
+      left: 0;
+      z-index: 99999;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px 0 rgba(162, 154, 154, 0.13);
+
+      @media screen and (max-width: 781px) {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        transition: none;
+      }
+
+      li {
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+        padding: 0;
+        margin: 0;
+
+        & > ul {
+          left: 102%;
+
+          @media only screen and (max-width: 781px) {
+            left: 0;
+            top: 0;
+          }
+        }
+
+        a {
+          display: block;
+          padding: 7px 15px;
+        }
+      }
+      li:hover > ul,
+      li.focus > ul {
+        left: 100%;
+        @media only screen and (max-width: 781px) {
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+    li:hover > ul.sub-menu,
+    li:focus > ul.sub-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    ul {
+      position: absolute;
+      top: 100%;
+
+      ul {
+        top: 0;
+      }
+
+      a {
+        width: 200px;
+      }
+    }
+
+    li {
+      position: relative;
+      margin-right: 17px;
+
+      @media screen and (max-width: 781px) {
+        margin-right: 0;
+        width: 100%;
+
+        a {
+          display: block;
+        }
+      }
+
+      &.flexMenu-viewMore {
+        ul li {
+          border-style: solid;
+          border-width: 0 1px 1px 1px;
+          padding: 0;
+          margin: 0;
+
+          a {
+            padding: 7px 15px;
+            line-height: 1.5;
+          }
+        }
+      }
+      &.menu-item-has-children {
+        &:before {
+          content: "\f107";
+          z-index: 2;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          font-family: FontAwesome;
+          transform: translateY(-50%);
+          transition: all 0.3s ease-in-out;
+        }
+
+        a {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .flexMenu-viewMore ul {
+    background-color: #fff;
+    z-index: 9999;
+  }
+
+  .menu-item-has-children {
+    @media screen and (min-width: 781px) {
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+.main-navigation {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include align-items(center);
+
+  @media screen and (max-width: 781px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+  }
+}
+body .widget_nav_menu,
+body .main-navigation {
+  .flexMenu-viewMore ul {
+    left: auto;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+
+    li {
+      position: relative;
+      ul {
+        position: relative;
+        top: 0;
+        right: auto;
+        left: auto;
+        transition: none;
+      }
+      &:hover,
+      &:focus {
+        ul {
+          right: auto;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+.main-navigation > ul > li > a:hover::before,
+.main-navigation > ul > li > a:hover::after,
+.main-navigation > ul > li > a:focus::before,
+.main-navigation > ul > li > a:focus::after,
+.main-navigation > ul > li.current-menu-item > a::before,
+.main-navigation > ul > li.current-menu-item > a::after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.menu-item-has-children {
+  cursor: pointer;
+}
+.menu-item-has-children span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 6px;
+  right: 6px;
+  z-index: 99;
+  background-color: #eee;
+  text-align: center;
+
+  &:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 30px;
+    line-height: 1;
+    display: block;
+    color: #4db2ec;
+  }
+}
+
+.main-navigation .flexMenu-viewMore ul li.menu-item-has-children:before,
+.midle-header-right .flexMenu-viewMore ul li.menu-item-has-children:before {
+  content: none;
+}
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 781px) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items(center);
+  }
+}
+@media screen and (max-width: 781px) {
+  .main-navigation ul li.menu-item-has-children:before {
+    content: none;
+  }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  width: 100%;
+
+  .site-main & {
+    margin: 0 0 30px;
+    overflow: hidden;
+  }
+
+  .nav-previous,
+  .nav-next {
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    a {
+      padding: 5px 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: transparent;
+      position: relative;
+      @include flexbox() @include align-items(center) @include
+        justify-content(center) transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .nav-previous {
+    padding-right: 15px;
+    float: left;
+
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+
+      & + .nav-next {
+        margin-top: 15px;
+      }
+    }
+
+    a:before {
+      content: "\f104";
+      font-family: FontAwesome;
+      margin-right: 10px;
+    }
+  }
+
+  .nav-next {
+    padding-left: 15px;
+    float: right;
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+
+    a:after {
+      content: "\f105";
+      font-family: FontAwesome;
+      margin-left: 10px;
+    }
+  }
+}
+.pagination {
+  margin-bottom: 30px;
+}

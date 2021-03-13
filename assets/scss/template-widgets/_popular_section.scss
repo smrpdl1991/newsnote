@@ -1,0 +1,35 @@
+.popular-post {
+  article {
+    @include flexbox() @include flex-wrap(wrap) @include align-items(flex-start)
+      @extend %box-shadow;
+
+    .post-content {
+      padding: 15px;
+    }
+
+    figure {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 30%;
+      }
+
+      & + .post-content {
+        width: 60%;
+        padding: 15px;
+
+        @media screen and (max-width: 992px) {
+          width: 70%;
+        }
+      }
+    }
+
+    &:hover {
+      @extend %box-shadow-hover;
+    }
+  }
+}

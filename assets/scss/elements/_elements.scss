@@ -1,0 +1,72 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { 
+	box-sizing: inherit;
+}
+hr {
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin: 0 0 15px 15px;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin:0;
+}
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 15px 15px;
+}
+
+img, video {
+    height: auto;
+    max-width: 100%;
+    vertical-align:top;
+}
+video {
+
+    vertical-align:middle;
+}
+
+figure {
+    margin: 0 0 30px;
+}
+section.widget figure{
+    margin:0;
+}
+table {
+    
+    margin: 0 0 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    padding: 5px 10px;
+}
+
+td {
+    border: 1px solid #f1f1f1;
+    padding: 5px 10px;
+}

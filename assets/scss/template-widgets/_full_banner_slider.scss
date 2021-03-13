@@ -1,0 +1,53 @@
+.full-banner-slider {
+  article {
+    .post-content {
+      padding: 15px;
+      @extend %box-shadow;
+
+      &:hover {
+        @extend %box-shadow-hover;
+      }
+    }
+
+    &:hover {
+      .post-content {
+        @media screen and (max-width: 640px) {
+          box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
+        }
+      }
+    }
+
+    figure {
+      &:before {
+        @extend %overlay;
+      }
+
+      & + .post-content {
+        @extend %absolute;
+        box-shadow: none;
+        background-color: transparent;
+
+        @media screen and (max-width: 640px) {
+          box-shadow: 0px 0px 15px 0px rgba(162, 154, 154, 0.13);
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        @media screen and (max-width: 640px) {
+          position: static;
+        }
+      }
+    }
+
+    &:hover {
+      figure {
+        img {
+          @extend %scaleimg;
+        }
+      }
+    }
+  }
+}

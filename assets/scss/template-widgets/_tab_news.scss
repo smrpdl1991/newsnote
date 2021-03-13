@@ -1,0 +1,173 @@
+.news-on-tab {
+  .heading {
+    @media screen and (max-width: 1140px) {
+      border: 0;
+    }
+  }
+  .tab-list {
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0 0 10px 0;
+    @include flexbox();
+    @include flex-wrap(wrap);
+
+    @media screen and (max-width: 1140px) {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 0;
+      margin-top: 0px;
+      border-style: solid;
+      border-width: 5px 0 0 0;
+    }
+    li {
+      margin: 0 0 5px 5px;
+      position: relative;
+      cursor: pointer;
+      padding: 5px 10px;
+      line-height: 1;
+
+      @media screen and (max-width: 1140px) {
+        margin: 0 5px 5px 0;
+      }
+
+      &.current {
+        cursor: text;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 5px 0 5px;
+
+          @media screen and (max-width: 1140px) {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    display: none;
+
+    &.current {
+      display: block;
+    }
+  }
+  .news-wrap {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin: 0 -15px;
+
+    article {
+      @include col-size($max-size: max-width, $col-total: 3, $space: 30px);
+      width: 100%;
+      margin-left: 15px;
+      margin-right: 15px;
+      @extend %box-shadow;
+
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+      }
+      @media screen and (max-width: 540px) {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+
+      &:hover {
+        @extend %box-shadow-hover;
+      }
+    }
+    .post-content {
+      padding: 15px;
+    }
+
+    &.column1 {
+      article {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        @media screen and (max-width: 992px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+        @media screen and (max-width: 540px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+      }
+    }
+
+    &.column2 {
+      article {
+        @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+        @media screen and (max-width: 992px) {
+          @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+        }
+        @media screen and (max-width: 540px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+      }
+    }
+    &.column4 {
+      article {
+        @include col-size($max-size: max-width, $col-total: 4, $space: 30px)
+          @media screen and (max-width: 992px) {
+          @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+        }
+        @media screen and (max-width: 540px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+      }
+    }
+  }
+}
+.small-news-area {
+  .news-on-tab {
+    .heading {
+      border: 0;
+
+      .entry-title,
+      .widget-title {
+        & + .tab-list {
+          padding-top: 30px;
+          padding-bottom: 0;
+          width: 100%;
+          border-width: 5px 0 0 0;
+          border-style: solid;
+        }
+      }
+
+      .tab-list {
+        li {
+          flex-grow: 1;
+          margin-left: 0;
+          margin-right: 5px;
+          margin-bottom: 5px;
+
+          &:before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .news-wrap {
+      article {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        @media screen and (max-width: 992px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+
+        @media screen and (max-width: 540px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+        }
+      }
+    }
+  }
+}

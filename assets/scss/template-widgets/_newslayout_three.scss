@@ -1,0 +1,51 @@
+.news-layout-three {
+  .news-layout-wrap {
+    @include flexbox();
+    @include flex-wrap(wrap);
+  }
+  article {
+    width: calc(50% - 15px);
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    margin-right: 15px;
+
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @extend %box-shadow;
+
+    &:hover {
+      @extend %box-shadow-hover;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 15px;
+      margin-right: 0;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0px;
+      }
+    }
+
+    .post-content {
+      padding: 15px;
+      width: 100%;
+    }
+
+    figure {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+
+      & + .post-content {
+        width: 60%;
+        padding: 15px;
+      }
+    }
+  }
+}

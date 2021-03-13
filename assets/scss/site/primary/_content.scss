@@ -1,0 +1,147 @@
+.post-item-wrapper{
+	&.list-layout{
+		article{
+			@include flexbox()
+			@include  flex-wrap(wrap)
+			@extend %box-shadow;	
+
+			&:hover{
+				@extend %box-shadow-hover;
+			}
+
+			.post-content{
+				padding:30px;
+			}
+
+			figure{
+
+				img{
+					width:100%;
+				}
+
+				width:30%;
+
+				& + .post-content{
+					width:70%;
+				}
+			}	
+		}
+	}
+
+	&.grid-layout,
+	&.masonery-layout{
+		margin-left:-15px;
+		margin-right:-15px;
+		@include flexbox()
+		@include  flex-wrap(wrap)
+
+		figure{
+			img{
+				width:100%;
+			}
+		}
+
+		&.column-2{
+			article{
+				@include col-size($max-size :max-width, $col-total:2 , $space:30px)
+
+				@media screen and (max-width:640px){
+					@include col-size($max-size :max-width, $col-total:1 , $space:30px)
+				}
+			}
+		}
+
+		&.column-3{
+			article{
+				@include col-size($max-size :max-width, $col-total:3 , $space:30px)
+
+					@media screen and (max-width:840px){
+						@include col-size($max-size :max-width, $col-total:2 , $space:30px)
+					}
+					@media screen and (max-width:640px){
+						@include col-size($max-size :max-width, $col-total:1 , $space:30px)
+					}
+			}
+
+		}
+		&.column-4{
+			article{
+				@include col-size($max-size :max-width, $col-total:4 , $space:30px)
+
+				@media screen and (max-width:992px){
+					@include col-size($max-size :max-width, $col-total:2 , $space:30px)
+				}
+				@media screen and (max-width:640px){
+					@include col-size($max-size :max-width, $col-total:1 , $space:30px)
+				}
+			}
+		}
+
+		&.column-5{
+			article{
+				@include col-size($max-size :max-width, $col-total:5 , $space:30px)
+
+					@media screen and (max-width:1140px){
+						@include col-size($max-size :max-width, $col-total:3 , $space:30px)
+					}
+
+					@media screen and (max-width:840px){
+						@include col-size($max-size :max-width, $col-total:2 , $space:30px)
+					}
+					@media screen and (max-width:640px){
+						@include col-size($max-size :max-width, $col-total:1 , $space:30px)
+					}
+			}
+
+		}
+		&.column-6{
+			article{
+				@include col-size($max-size :max-width, $col-total:6 , $space:30px)
+
+				@media screen and (max-width:1140px){
+					@include col-size($max-size :max-width, $col-total:3 , $space:30px)
+				}
+
+				@media screen and (max-width:992px){
+					@include col-size($max-size :max-width, $col-total:2 , $space:30px)
+				}
+				@media screen and (max-width:640px){
+					@include col-size($max-size :max-width, $col-total:1 , $space:30px)
+				}
+			}
+		}
+
+		article{
+			width:100%; 
+			margin-left:15px;
+			margin-right:15px;
+			@extend %box-shadow;	
+
+			&:hover{
+				@extend %box-shadow-hover;
+			}
+
+			.post-content{
+				padding:30px;
+			}
+		}
+
+	}
+
+	&.classic-layout{
+		article{
+			width:100%;
+
+			
+			@extend %box-shadow;	
+
+			&:hover{
+				@extend %box-shadow-hover;
+			}
+
+			.post-content{
+				padding:30px;
+			}
+		}
+	}
+}

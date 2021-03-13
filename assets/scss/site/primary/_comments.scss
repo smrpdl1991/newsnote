@@ -1,0 +1,72 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comment-respond{
+	padding:30px;
+	@extend %box-shadow;
+	margin-bottom:30px;
+
+	.comment-form-comment{
+	    float: left;
+	    width: 50%;
+	    padding-right:7px;
+	}
+
+	.comment-form-author,
+	.comment-form-email{
+	    width: 50%;
+	    padding-left:7px;
+	    float: left;
+	}
+	.comment-form-cookies-consent{
+	    float:left;
+	    width: 100%;
+	}
+	.form-submit{
+		margin-bottom:0;
+	    float:left;
+	    width: 100%;
+	    text-align: right;
+	}
+} 
+ 
+.logged-in .comment-respond .comment-form-comment {
+    float: left;
+    width:100%;
+    padding-right:0;
+}
+
+.comment-list{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.comment-list article{
+	margin-bottom:30px;
+	padding:15px;
+	@extend %box-shadow;
+}
+.comment-meta,
+.comment-author{
+	@include flexbox();
+	@include  flex-wrap(wrap);
+	@include align-items(center);
+}
+.comment-meta{
+	margin-bottom: 15px;
+}
+.comment-author img{
+	width:32px;
+	height: 32px;
+	border-radius: 50%;
+	margin-right:7px;
+}
+.comment-author {
+	margin-right:7px;
+}
+.comment-author b{
+	margin-right:7px;
+}

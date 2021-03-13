@@ -1,0 +1,526 @@
+# Copyright (C) 2021
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: wpthemeweb@gmail.com\n"
+"POT-Creation-Date: 2021-02-18 17:07:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WPThemeWeb <wpthemeweb@gmail.com>\n"
+"Language-Team: WPThemeWeb <wpthemeweb@gmail.com>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: 404.php:14
+msgid "404 page not found"
+msgstr ""
+
+#: 404.php:22
+msgid "Back to home"
+msgstr ""
+
+#: comments.php:35
+#. translators: 1: title.
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:8
+msgid "Go to Top"
+msgstr ""
+
+#: inc/base/widget.php:20 inc/widgets/author.php:35
+#: inc/widgets/featured-posts.php:35 inc/widgets/masonery-posts.php:35
+#: inc/widgets/news-list.php:35 inc/widgets/popular-posts.php:26
+#: inc/widgets/slider-widget.php:35 inc/widgets/social-icons.php:35
+#: inc/widgets/video.php:35
+msgid "Title"
+msgstr ""
+
+#: inc/base/widget.php:58
+msgid "Select"
+msgstr ""
+
+#: inc/core/functions.php:172
+msgid "Home"
+msgstr ""
+
+#: inc/core/functions.php:188
+msgid "No Image"
+msgstr ""
+
+#: inc/core/functions.php:193
+msgid "full (original)"
+msgstr ""
+
+#: inc/core/functions.php:196
+msgid "Croped"
+msgstr ""
+
+#: inc/core/functions.php:196
+msgid "Resize"
+msgstr ""
+
+#: inc/customizer/custom-controls.php:375
+msgid "Add"
+msgstr ""
+
+#: inc/customizer/custom-controls.php:717
+msgid "Select weight & style for regular text"
+msgstr ""
+
+#: inc/customizer/custom-controls.php:727
+#: inc/customizer/custom-controls.php:745
+msgid "Select weight for"
+msgstr ""
+
+#: inc/customizer/custom-controls.php:727
+msgid "italic text"
+msgstr ""
+
+#: inc/customizer/custom-controls.php:745
+msgid "bold text"
+msgstr ""
+
+#: inc/customizer/footer-options.php:24
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/footer-options.php:33
+msgid "Botom Footer"
+msgstr ""
+
+#: inc/customizer/footer-options.php:41
+msgid "2020 Theme Company All Rights Reserved Privacy Policy "
+msgstr ""
+
+#: inc/customizer/footer-options.php:49
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer/header-options.php:26
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/header-options.php:41
+msgid "Top Bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:57
+msgid "Show date?"
+msgstr ""
+
+#: inc/customizer/header-options.php:73
+msgid "Show social links?"
+msgstr ""
+
+#: inc/customizer/header-options.php:95
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer/header-options.php:112
+msgid "Alignment Items"
+msgstr ""
+
+#: inc/customizer/header-options.php:114
+msgid "Left Align"
+msgstr ""
+
+#: inc/customizer/header-options.php:115
+msgid "Right Align"
+msgstr ""
+
+#: inc/customizer/header-options.php:116
+msgid "Center Align"
+msgstr ""
+
+#: inc/customizer/header-options.php:127
+msgid "Navigation Menu"
+msgstr ""
+
+#: inc/customizer/header-options.php:143
+msgid "Show search icon?"
+msgstr ""
+
+#: inc/customizer/header-options.php:153
+msgid "Ticker Options"
+msgstr ""
+
+#: inc/customizer/header-options.php:161
+msgid "Recent News"
+msgstr ""
+
+#: inc/customizer/header-options.php:169
+msgid "Ticker Label"
+msgstr ""
+
+#: inc/customizer/header-options.php:187 inc/widgets/news-list.php:42
+msgid "Layout One"
+msgstr ""
+
+#: inc/customizer/header-options.php:188 inc/widgets/news-list.php:43
+msgid "Layout Two"
+msgstr ""
+
+#: inc/customizer/header-options.php:190
+msgid "Ticker Layouts"
+msgstr ""
+
+#: inc/customizer/header-options.php:200
+msgid "Header Settings"
+msgstr ""
+
+#: inc/customizer/header-options.php:223
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer/header-options.php:224
+msgid "Top Header"
+msgstr ""
+
+#: inc/customizer/header-options.php:225
+msgid "Branding"
+msgstr ""
+
+#: inc/customizer/header-options.php:226
+msgid "Ticker"
+msgstr ""
+
+#: inc/customizer/header-options.php:227
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/header-options.php:229
+msgid "Sortable headers section"
+msgstr ""
+
+#: inc/customizer/templates.php:26
+msgid "Templates"
+msgstr ""
+
+#: inc/customizer/templates.php:40
+msgid "Archive Options"
+msgstr ""
+
+#: inc/customizer/templates.php:56
+msgid "Archive Layout"
+msgstr ""
+
+#: inc/customizer/templates.php:57 inc/customizer/theme-options.php:61
+msgid "Sidebar related settings goes here."
+msgstr ""
+
+#: inc/customizer/templates.php:61
+msgid "List Layout"
+msgstr ""
+
+#: inc/customizer/templates.php:62
+msgid "Grid Layout"
+msgstr ""
+
+#: inc/customizer/templates.php:63
+msgid "Masonery Layout"
+msgstr ""
+
+#: inc/customizer/templates.php:78 inc/widgets/masonery-posts.php:66
+#: inc/widgets/slider-widget.php:54
+msgid "No of column"
+msgstr ""
+
+#: inc/customizer/templates.php:83 inc/widgets/masonery-posts.php:68
+#: inc/widgets/news-list.php:63
+msgid "Column One"
+msgstr ""
+
+#: inc/customizer/templates.php:84 inc/widgets/masonery-posts.php:69
+#: inc/widgets/news-list.php:64
+msgid "Column Two"
+msgstr ""
+
+#: inc/customizer/templates.php:85 inc/widgets/masonery-posts.php:70
+#: inc/widgets/news-list.php:65
+msgid "Column Three"
+msgstr ""
+
+#: inc/customizer/templates.php:86 inc/widgets/masonery-posts.php:71
+#: inc/widgets/news-list.php:66
+msgid "Column Four"
+msgstr ""
+
+#: inc/customizer/templates.php:87
+msgid "Column Five"
+msgstr ""
+
+#: inc/customizer/templates.php:88
+msgid "Column Six"
+msgstr ""
+
+#: inc/customizer/theme-options.php:22
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/theme-options.php:34
+msgid "Global Options"
+msgstr ""
+
+#: inc/customizer/theme-options.php:35
+msgid "Global options settings goes here."
+msgstr ""
+
+#: inc/customizer/theme-options.php:54 inc/widgets/index.php:42
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:55 inc/widgets/index.php:54
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:56
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:57
+msgid "Both Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:58
+msgid "No Sidebar center"
+msgstr ""
+
+#: inc/customizer/theme-options.php:60
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/theme-options.php:77 inc/widgets/featured-posts.php:48
+#: inc/widgets/news-list.php:80
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer/theme-options.php:87 inc/customizer/theme-options.php:105
+msgid "Social Links"
+msgstr ""
+
+#: inc/customizer/theme-options.php:88
+msgid "You can add or social media links from there."
+msgstr ""
+
+#: inc/customizer/theme-options.php:108
+msgid "Add Icon"
+msgstr ""
+
+#: inc/customizer/theme-options.php:118
+msgid "Category Colors"
+msgstr ""
+
+#: inc/customizer/theme-options.php:144
+#. translators: %s: Category Name
+msgid " %s Button Background"
+msgstr ""
+
+#: inc/hooks/setup.php:67
+msgid "Top Menu"
+msgstr ""
+
+#: inc/hooks/setup.php:68
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/hooks/setup.php:69
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/widgets/author.php:25
+msgid "NM: Author Info"
+msgstr ""
+
+#: inc/widgets/author.php:42
+msgid "Author ID"
+msgstr ""
+
+#: inc/widgets/author.php:91
+msgid "Read More"
+msgstr ""
+
+#: inc/widgets/featured-posts.php:25
+msgid "NM: Featured Posts"
+msgstr ""
+
+#: inc/widgets/featured-posts.php:41 inc/widgets/news-list.php:54
+msgid "Slider Category"
+msgstr ""
+
+#: inc/widgets/featured-posts.php:54
+msgid "No of slides"
+msgstr ""
+
+#: inc/widgets/featured-posts.php:60
+msgid "Block Category"
+msgstr ""
+
+#: inc/widgets/index.php:58
+msgid "Header Area"
+msgstr ""
+
+#: inc/widgets/index.php:64
+msgid "Homepage Top Area"
+msgstr ""
+
+#: inc/widgets/index.php:68
+msgid "Homepage Left Area"
+msgstr ""
+
+#: inc/widgets/index.php:72
+msgid "Homepage Right Sidebar"
+msgstr ""
+
+#: inc/widgets/index.php:76
+msgid "Homepage Left Sidebar"
+msgstr ""
+
+#: inc/widgets/index.php:80
+msgid "Homepage Right Area"
+msgstr ""
+
+#: inc/widgets/index.php:84
+msgid "Homepage Both Sidebar(Left)"
+msgstr ""
+
+#: inc/widgets/index.php:88
+msgid "Homepage Both Sidebar(Content)"
+msgstr ""
+
+#: inc/widgets/index.php:92
+msgid "Homepage Both Sidebar(right)"
+msgstr ""
+
+#: inc/widgets/index.php:96
+msgid "Homepage Bottom Area"
+msgstr ""
+
+#: inc/widgets/index.php:100
+msgid "Footer Area %d"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:25
+msgid "NM: Masonery Posts"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:41
+msgid "Masonery Category"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:48 inc/widgets/slider-widget.php:48
+msgid "Remove space?"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:54
+msgid "Absolute Content?"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:60
+msgid "No of posts?"
+msgstr ""
+
+#: inc/widgets/masonery-posts.php:78 inc/widgets/news-list.php:73
+#: inc/widgets/popular-posts.php:32 inc/widgets/slider-widget.php:85
+msgid "Thumbnail Size"
+msgstr ""
+
+#: inc/widgets/news-list.php:25
+msgid "NM: News List"
+msgstr ""
+
+#: inc/widgets/news-list.php:44
+msgid "Layout Three"
+msgstr ""
+
+#: inc/widgets/news-list.php:45
+msgid "Layout Four"
+msgstr ""
+
+#: inc/widgets/news-list.php:46
+msgid "Tabs News"
+msgstr ""
+
+#: inc/widgets/news-list.php:48
+msgid "Layouts"
+msgstr ""
+
+#: inc/widgets/news-list.php:61
+msgid "No of column(This is only work when you choose tab news layout)"
+msgstr ""
+
+#: inc/widgets/popular-posts.php:48
+msgid "NM: Popular Posts"
+msgstr ""
+
+#: inc/widgets/slider-widget.php:25
+msgid "NM: Slider Widget"
+msgstr ""
+
+#: inc/widgets/slider-widget.php:41
+msgid "Carousel Category"
+msgstr ""
+
+#: inc/widgets/slider-widget.php:67
+msgid "No of Posts"
+msgstr ""
+
+#: inc/widgets/social-icons.php:25
+msgid "NM: Social Icons"
+msgstr ""
+
+#: inc/widgets/social-icons.php:36
+msgid ""
+"To add social icons please go click  %s here %s or Custoizer >> Theme "
+"Options >> Social Media and add link from there."
+msgstr ""
+
+#: inc/widgets/tab-posts.php:25
+msgid "NM: Tab Posts"
+msgstr ""
+
+#: inc/widgets/tab-posts.php:36
+msgid "Latest Title"
+msgstr ""
+
+#: inc/widgets/tab-posts.php:42
+msgid "Popular Title"
+msgstr ""
+
+#: inc/widgets/video.php:25
+msgid "NM: Tab Gallery"
+msgstr ""
+
+#: inc/widgets/video.php:41
+msgid "Post Category"
+msgstr ""
+
+#: single.php:52
+msgid "view all posts by"
+msgstr ""
+
+#: template-parts/footer/footer-info.php:7
+msgid "&copy; 2021 Theme Company All Rights Reserved"
+msgstr ""
+
+#: template-parts/header/header-navigation.php:33
+msgid "Search"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "NewsNote"
+msgstr ""
+
+#: comments.php:41
+#. translators: 1: comment count number, 2: title.
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""

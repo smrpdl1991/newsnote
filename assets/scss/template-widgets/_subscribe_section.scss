@@ -1,0 +1,12 @@
+.subscribe-section{
+	form{
+		position:relative;
+
+		input[type=submit]{
+			position:absolute;
+			top:0;
+			bottom:0;
+			right:0;
+		}
+	}
+}

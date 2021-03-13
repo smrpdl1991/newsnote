@@ -1,0 +1,183 @@
+.masonery-layout {
+  .news-layout-wrap {
+    margin: 0 -15px;
+  }
+
+  &.absolute-content {
+    article {
+      position: relative;
+
+      &:before {
+        @extend %overlay;
+      }
+
+      figure {
+        & + .post-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1;
+        }
+      }
+      .entry-title a,
+      .entry-meta div a,
+      .entry-meta > div {
+        color: #fff;
+      }
+
+      .entry-title a:hover,
+      .entry-meta div a:hover {
+        color: #4db2ec;
+      }
+    }
+  }
+
+  article {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    @extend %box-shadow;
+
+    &:hover {
+      @extend %box-shadow-hover;
+    }
+
+    figure {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .post-content {
+      padding: 15px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &.column-one {
+    article {
+      @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+    }
+  }
+
+  &.column-two {
+    article {
+      @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+
+      @media screen and (max-width: 500px) {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+    }
+  }
+
+  &.column-three {
+    article {
+      @include col-size($max-size: max-width, $col-total: 3, $space: 30px);
+
+      @media screen and (max-width: 1140px) {
+        @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+      }
+      @media screen and (max-width: 500px) {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+    }
+  }
+
+  &.column-four {
+    article {
+      @include col-size($max-size: max-width, $col-total: 4, $space: 30px);
+
+      @media screen and (max-width: 1140px) {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+      @media screen and (max-width: 500px) {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+    }
+  }
+
+  &.no-space {
+    .news-layout-wrap {
+      margin: 0;
+    }
+
+    &.column-one,
+    &.column-two,
+    &.column-three,
+    &.column-four {
+      article {
+        margin: 0;
+      }
+    }
+    &.column-one {
+      article {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+      }
+    }
+    &.column-two {
+      article {
+        @include col-size($max-size: max-width, $col-total: 2, $space: 0px);
+
+        @media screen and (max-width: 500px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+        }
+      }
+    }
+    &.column-three {
+      article {
+        @include col-size($max-size: max-width, $col-total: 3, $space: 0px);
+
+        @media screen and (max-width: 1140px) {
+          @include col-size($max-size: max-width, $col-total: 2, $space: 0px);
+        }
+        @media screen and (max-width: 500px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+        }
+      }
+    }
+    &.column-four {
+      article {
+        @include col-size($max-size: max-width, $col-total: 4, $space: 0px);
+
+        @media screen and (max-width: 1140px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+        }
+        @media screen and (max-width: 500px) {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+        }
+      }
+    }
+  }
+}
+
+.small-news-area {
+  .masonery-layout {
+    &.column-one,
+    &.column-two,
+    &.column-three,
+    &.column-four {
+      article {
+        @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      }
+    }
+
+    &.no-space {
+      .news-layout-wrap {
+        margin: 0;
+      }
+
+      &.column-one,
+      &.column-two,
+      &.column-three,
+      &.column-four {
+        article {
+          @include col-size($max-size: max-width, $col-total: 1, $space: 0px);
+          margin: 0 0 0px 0;
+        }
+      }
+    }
+  }
+}

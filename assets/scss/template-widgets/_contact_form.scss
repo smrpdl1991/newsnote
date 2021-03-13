@@ -1,0 +1,19 @@
+.contact-form {
+  margin-bottom: 30px;
+
+  form {
+    padding: 30px;
+    @extend %box-shadow;
+
+    span.wpcf7-form-control-wrap {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &.widget {
+    form {
+      padding: 15px;
+    }
+  }
+}

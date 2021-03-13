@@ -1,0 +1,129 @@
+.middle-header-wrap {
+  @extend %flex-design;
+  padding: 30px 0;
+
+  .site-branding {
+    line-height: 1;
+    max-width: 300px;
+    width: 100%;
+    padding-right: 15px;
+
+    @media screen and (max-width: 781px) {
+      max-width: 100%;
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+
+  .site-title {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    & + .site-description {
+      margin-top: 10px;
+    }
+  }
+  .site-description {
+    margin: 0;
+  }
+
+  .midle-header-right {
+    max-width: calc(100% - 300px);
+    width: 100%;
+    padding-left: 15px;
+
+    @media screen and (max-width: 781px) {
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 30px;
+    }
+
+    .widget_media_image {
+      text-align: right;
+
+      @media screen and (max-width: 781px) {
+        text-align: center;
+      }
+    }
+
+    .widget:last-child {
+      margin-bottom: 0;
+
+      article:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .widget_nav_menu {
+      text-align: right;
+
+      @media screen and (max-width: 781px) {
+        text-align: center;
+      }
+
+      ul {
+        display: inline-block;
+
+        li {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.middle-header {
+  &.align-right {
+    .middle-header-wrap {
+      .site-branding {
+        order: 2;
+        padding-right: 0;
+        padding-left: 15px;
+        text-align: right;
+      }
+      .midle-header-right {
+        order: 1;
+        padding-left: 0;
+        padding-right: 15px;
+
+        .widget_media_image,
+        .widget_nav_menu,
+        .widget {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &.align-center {
+    .middle-header-wrap {
+      .site-branding {
+        padding-right: 0;
+        padding-left: 0px;
+        text-align: center;
+        max-width: 100%;
+
+        & + .midle-header-right {
+          margin-top: 30px;
+        }
+      }
+      .midle-header-right {
+        padding-left: 0;
+        padding-right: 0px;
+        max-width: 100%;
+
+        .widget_media_image,
+        .widget_nav_menu,
+        .widget {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

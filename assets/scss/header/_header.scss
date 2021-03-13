@@ -1,0 +1,12 @@
+.site-header {
+  margin-bottom: 30px;
+}
+.custom-header-media img {
+  display: block;
+  margin: 0 auto;
+}
+@import "top-header";
+@import "middle-header";
+@import "navbar";
+@import "news-ticker";
+@import "page_title";

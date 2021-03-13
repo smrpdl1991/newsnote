@@ -1,0 +1,27 @@
+.sticky {
+  display: block;
+}
+
+.post {
+  margin: 0 0 30px;
+}
+.page {
+  margin: 0 0 30px;
+}
+body.page {
+  margin: 0;
+}
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 30px;
+}

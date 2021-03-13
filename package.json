@@ -1,0 +1,51 @@
+{
+  "name": "NewsNote",
+  "title": "NewsNote",
+  "version": "1.0.0",
+  "homepage": "https://wpthemeweb.com/downloads/newsnote",
+  "repository": {
+    "type": "git",
+    "url": "https://github.org/wpthemeweb/newsnote.git"
+  },
+  "license": "GPL-3.0+",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-fixmyjs": "^0.3.0",
+    "grunt-phpcbf": "^0.1.1",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-postcss": "~0.9.0",
+    "grunt-potomo": "^3.5.0",
+    "grunt-rtlcss": "~2.0.1",
+    "grunt-sass": "^2.0.0",
+    "grunt-stylelint": "~0.9.0",
+    "grunt-wp-i18n": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  },
+  "dependencies": {
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-css-url-replace": "^0.2.7",
+    "grunt-reload": "^0.2.0",
+    "node-bourbon": "^4.2.8",
+    "uglify": "^0.1.5"
+  },
+  "description": "=== NewsNote ===\r Contributors:       wpthemeweb\r Requires at least:  WordPress 4.0\r Tested up to:       5.6\r Donate link:        https://wpthemeweb.com/\r Version:            1.0.0\r Requires PHP:       5.3\r Stable tag:         1.0.0\r License:            GPLv3 or later\r License URI:        http://www.gnu.org/licenses/gpl-3.0.html\r Tags:               one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}

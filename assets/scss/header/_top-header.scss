@@ -1,0 +1,133 @@
+%flex-design {
+  @include flexbox() @include align-items(center) @include flex-wrap(wrap);
+}
+.top-header {
+  position: relative;
+  z-index: 999;
+}
+.top-header-wrap {
+  @extend %flex-design;
+  min-height: 50px;
+  position: relative;
+}
+.top-header-item {
+  width: calc(100% - 80px);
+  text-align: left;
+  font-size: 14px;
+  @include flexbox() @include align-items(center) @include flex-grow(1)
+    .current-date-time {
+    margin-right: 10px;
+    max-width: 220px;
+  }
+
+  .top-header-menu {
+    max-width: calc(100% - 220px);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @extend %flex-design;
+
+      li {
+        a {
+          display: block;
+          margin: 0 10px;
+        }
+      }
+
+      ul {
+        display: none;
+      }
+
+      .flexMenu-viewMore {
+        & > a {
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 0 5px;
+        }
+
+        ul {
+          width: 200px;
+          padding: 10px;
+
+          li a {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-last-of-type(1) {
+    text-align: right;
+    width: 80px;
+    @include justify-content(flex-end);
+    padding: 0;
+    @include flex-grow(1);
+  }
+  &:nth-of-type(1) {
+    width: calc(100% - 80px);
+    @include justify-content(flex-start);
+    @include flex-grow(1);
+  }
+
+  .search-toggle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .social-links {
+    .follow-us {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.site-header {
+  .social-links {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    .follow-us {
+      text-align: center;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.3);
+
+      & + ul {
+        position: absolute;
+        top: 110%;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+
+        li {
+          display: block;
+          margin: 0;
+        }
+
+        a {
+          min-width: 40px;
+          line-height: 40px;
+          width: 100%;
+        }
+      }
+
+      &.open + ul {
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.widget_media_image a{
+  display:inline-block;
+}

@@ -1,0 +1,49 @@
+.author-info {
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
+  .card-profile {
+    @extend %box-shadow;
+
+    &:hover {
+      @extend %box-shadow-hover;
+    }
+  }
+  .card-content {
+    padding: 15px;
+  }
+}
+
+.widget-post-author {
+  padding: 30px;
+
+  figure {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+  }
+  .author-details {
+    width: calc(100% - 80px);
+    float: left;
+    padding-left: 17px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 7px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.author-info-wrap {
+  @include flexbox() @include flex-wrap(wrap) @include align-items(center)
+    .author-info {
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,82 @@
+.news-layout-four {
+  .news-layout-wrap {
+    margin: 0 -15px;
+  }
+  article {
+    width: calc(50% - 30px);
+    float: right;
+    margin: 0 15px 30px;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items(flex-start);
+    @extend %box-shadow;
+
+    @media screen and (max-width: 768px) {
+      width: calc(100% - 30px);
+    }
+
+    &:hover {
+      @extend %box-shadow-hover;
+    }
+
+    figure {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+
+      &:before {
+        @extend %overlay;
+      }
+
+      & + .post-content {
+        width: 70%;
+        padding: 15px;
+      }
+    }
+
+    &:nth-of-type(1) {
+      display: block;
+      float: left;
+      box-shadow: none;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      figure {
+        width: 100%;
+
+        & + .post-content {
+          width: 100%;
+          @extend %absolute;
+        }
+      }
+
+      &:hover {
+        figure {
+          img {
+            @extend %scaleimg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.small-news-area {
+  .news-layout-four {
+    article {
+      width: calc(100% - 30px);
+
+      figure {
+        width: 100%;
+
+        & + .post-content {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,508 @@
+@import "colors";
+
+body {
+  background-color: $body_color;
+}
+/*---------------------
+$white_color
+----------------------*/
+.featured-news-posts .entry-meta,
+.featured-news-posts .entry-meta a,
+.carousel-news-wrap .entry-meta,
+.carousel-news-wrap .entry-meta a,
+.news-layout-one article:nth-last-of-type(1) figure + .post-content .entry-meta,
+.news-layout-one article:nth-last-of-type(2) figure + .post-content .entry-meta,
+.news-layout-one
+  article:nth-last-of-type(1)
+  figure
+  + .post-content
+  .entry-meta
+  a,
+.news-layout-one
+  article:nth-last-of-type(2)
+  figure
+  + .post-content
+  .entry-meta
+  a,
+.news-layout-one
+  article:nth-last-of-type(1)
+  figure
+  + .post-content
+  .entry-content,
+.news-layout-one
+  article:nth-last-of-type(2)
+  figure
+  + .post-content
+  .entry-content,
+.full-banner-slider figure + .post-content .entry-meta,
+.full-banner-slider figure + .post-content .entry-meta a,
+.full-banner-slider figure + .post-content .entry-content,
+.news-layout-four article:nth-of-type(1) figure + .post-content,
+.news-layout-four article:nth-of-type(1) figure + .post-content .entry-meta,
+.news-layout-four article:nth-of-type(1) figure + .post-content .entry-meta a,
+.video-container article figure + .post-content,
+.video-container article figure + .post-content .entry-meta,
+.video-container article figure + .post-content .entry-meta a,
+.site-footer .widget_text,
+.site-footer .widget_text a:hover,
+.widget_text .address ul .icon-wrap,
+.footer-bottom,
+.footer-bottom-wrap a,
+.back-to-top a,
+.featured-news-posts .entry-title a,
+.carousel-news-wrap .entry-title a,
+.news-layout-one
+  article:nth-last-of-type(1)
+  figure
+  + .post-content
+  .entry-title
+  a,
+.news-layout-one
+  article:nth-last-of-type(2)
+  figure
+  + .post-content
+  .entry-title
+  a,
+.full-banner-slider figure + .post-content .entry-title a,
+.news-layout-four article:nth-of-type(1) figure + .post-content .entry-title a,
+.video-container article figure + .post-content .entry-title a,
+.pop-header,
+.pop-header .close,
+.cat-link,
+.cat-link:hover,
+.site-footer .tagcloud a,
+.news-on-tab .tab-list li,
+.news-ticker-caption,
+.news-on-tab .tab-list li:hover,
+.news-on-tab .tab-list li.current,
+.back-to-main-page a,
+.pagination .nav-links .page-numbers,
+.card-detail-more a,
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.navbar-wrap a.navbar-home,
+.slick-slider .slick-arrow,
+.navbar-wrap a.navbar-home:hover,
+.slick-slider .slick-arrow:hover,
+.navbar-wrap a.navbar-home:focus,
+.slick-slider .slick-arrow:focus,
+.social-links .follow-us,
+.search-toggle,
+.video-gallery-section article .video-icon,
+.search-toggle:hover,
+.heading .entry-title,
+.heading .widget-title,
+.tab-section .tab-section-wrap ul li,
+.video-gallery-section .video-tabs .video-titles ul li,
+.top-header-item .top-header-menu ul li a,
+.top-header-item .current-date-time span,
+.top-header-item .current-date-time,
+.featured-news-posts .entry-meta > div:before,
+.absolute-content article figure + .post-content .entry-meta > div:before,
+.news-layout-one
+  article:nth-last-of-type(1)
+  figure
+  + .post-content
+  .entry-meta
+  > div:before,
+.news-layout-one
+  article:nth-last-of-type(2)
+  figure
+  + .post-content
+  .entry-meta
+  > div:before,
+.news-layout-four article:nth-of-type(1) .entry-meta > div:before,
+.carousel-news-wrap article .post-content .entry-meta > div:before,
+.video-gallery-section article figure + .post-content .entry-meta > div:before ,
+.site-footer .widget.widget_categories ul li a,
+.site-footer .widget.widget_recent_entries ul li a,
+.site-footer .widget.widget_recent_comments ul li a,
+.site-footer .widget.widget_meta ul li a,
+.site-footer .widget.widget_pages ul li a,
+.site-footer .widget.widget_rss ul li a,
+.site-footer .widget.widget_archive ul li a,
+.site-footer  .widget_calendar ,
+.site-footer  .widget_calendar a,
+.site-footer .widget-title a,
+.site-footer .rsswidget,
+.site-footer  .widget.widget_rss,
+.site-footer  .widget.widget_rss a,
+.site-footer  .widget.widget_nav_menu a{
+  color: $white_color;
+}
+
+article,
+.news-layout-three article,
+.news-wrap article,
+.news-layout-one article,
+.slides-post article,
+.news-layout-two article,
+.full-banner-slider article .post-content,
+.news-layout-four article,
+.tab-section article,
+.popular-post article,
+.author-info .card-profile,
+.full-banner-slider article,
+.search-header form,
+.search-header form:before,
+.slides-tab article,
+.middle-header,
+.widget.widget_categories ul li,
+.widget.widget_recent_entries ul li,
+.widget.widget_recent_comments ul li,
+.widget.widget_meta ul li,
+.widget.widget_pages ul li,
+.widget.widget_rss ul li,
+.widget.widget_archive ul li,
+.page-title-wrap,
+.post-item-wrapper.list-layout article,
+.post-item-wrapper.grid-layout article,
+.post-item-wrapper.classic-layout article,
+article.single,
+.comment-respond,
+.contact-form,
+.masonery-layout article,
+.main-navigation ul.sub-menu,
+.midle-header-right ul.sub-menu,
+.error404 h1,
+.back-to-main-page a:hover,
+.pagination .nav-links .page-numbers:hover,
+.card-detail-more a:hover,
+.nav-previous a:hover,
+.nav-next a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.back-to-main-page a:focus,
+.pagination .nav-links .page-numbers:focus,
+.card-detail-more a:focus,
+.nav-previous a:focus,
+.nav-next a:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.back-to-main-page a:active,
+.pagination .nav-links .page-numbers:active,
+.card-detail-more a:active,
+.nav-previous a:active,
+.nav-next a:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.pagination .nav-links .page-numbers.current,
+.pagination .nav-links .page-numbers:hover,
+.video-gallery-section article .video-icon:after,
+.screen-reader-text,
+.navbar,
+.news-ticker-wrap li,
+.main-navigation ul li.flexMenu-viewMore ul li a,
+article,
+.middle-header,
+.site-header {
+  background-color: $white_color;
+}
+mark,
+ins {
+  background: $white_color;
+}
+
+.pop-header .close,
+.back-to-top {
+  border-color: $white_color;
+}
+
+
+/*------------------
+primary-color
+-------------------*/
+a:hover,
+.back-to-main-page a:hover,
+.pagination .nav-links .page-numbers:hover,
+.card-detail-more a:hover,
+.nav-previous a:hover,
+.nav-next a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.back-to-main-page a:focus,
+.pagination .nav-links .page-numbers:focus,
+.card-detail-more a:focus,
+.nav-previous a:focus,
+.nav-next a:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.back-to-main-page a:active,
+.pagination .nav-links .page-numbers:active,
+.card-detail-more a:active,
+.nav-previous a:active,
+.nav-next a:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.pagination .nav-links .page-numbers.current,
+.pagination .nav-links .page-numbers:hover,
+.screen-reader-text,
+a:hover,
+.main-navigation a:hover,
+.main-navigation .current-menu-item:hover a,
+.main-navigation ul li.menu-item-has-children:hover:before,
+.midle-header-right ul li.menu-item-has-children:hover:before,
+.site-title a,
+.featured-news-posts .entry-title a:hover,
+.carousel-news-wrap .entry-title a:hover,
+.news-layout-one
+  article:nth-last-of-type(1)
+  figure
+  + .post-content
+  .entry-title
+  a:hover,
+.news-layout-one
+  article:nth-last-of-type(2)
+  figure
+  + .post-content
+  .entry-title
+  a:hover,
+.full-banner-slider figure + .post-content .entry-title a:hover,
+.news-layout-four
+  article:nth-of-type(1)
+  figure
+  + .post-content
+  .entry-title
+  a:hover,
+.video-container article figure + .post-content .entry-title a:hover,
+.site-footer .widget_text a,
+.page-title-wrap a {
+  color: $primary_color;
+}
+
+.back-to-main-page a,
+.pagination .nav-links .page-numbers,
+.card-detail-more a,
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.navbar-wrap a.navbar-home,
+.slick-slider .slick-arrow,
+.navbar-wrap a.navbar-home:hover,
+.slick-slider .slick-arrow:hover,
+.navbar-wrap a.navbar-home:focus,
+.slick-slider .slick-arrow:focus,
+.social-links .follow-us,
+.search-toggle,
+.video-gallery-section article .video-icon,
+.news-ticker-caption,
+.news-on-tab .tab-list li:hover,
+.news-on-tab .tab-list li.current,
+.pop-header,
+.cat-link,
+.heading .entry-title,
+.heading .widget-title,
+.tab-section .tab-section-wrap ul li,
+.widget_text .address ul .icon-wrap,
+.footer-bottom {
+  background-color: $primary_color;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select,
+.back-to-main-page a:hover,
+.pagination .nav-links .page-numbers:hover,
+.card-detail-more a:hover,
+.nav-previous a:hover,
+.nav-next a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.back-to-main-page a:focus,
+.pagination .nav-links .page-numbers:focus,
+.card-detail-more a:focus,
+.nav-previous a:focus,
+.nav-next a:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.back-to-main-page a:active,
+.pagination .nav-links .page-numbers:active,
+.card-detail-more a:active,
+.nav-previous a:active,
+.nav-next a:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.slides-tab article,
+.heading,
+.small-news-area .news-on-tab .heading .entry-title + .tab-list,
+.small-news-area .news-on-tab .heading .widget-title + .tab-list {
+  border-color: $primary_color;
+}
+
+.heading .entry-title,
+.heading .widget-title {
+  border-color: lighten($primary_color, 10%);
+}
+.news-ticker-caption:after {
+  border-color: transparent transparent transparent $primary_color;
+}
+.news-on-tab .tab-list li.current:before,
+.tab-section .tab-section-wrap ul li.current:before {
+  border-color: $primary_color transparent transparent transparent;
+}
+.tab-section .tab-section-wrap ul li {
+  border-color: lighten($primary_color, 10%);
+}
+.video-gallery-section .video-tabs .video-titles ul li {
+  border-color: lighten($primary_color, 10%);
+}
+.video-gallery-section .video-tabs .video-titles ul li::before {
+  background-color: lighten($primary_color, 10%);
+}
+.video-gallery-section .video-tabs .video-titles ul li.current::before {
+  border-color: lighten($primary_color, 30%);
+}
+
+/*----------------------
+secondary color
+----------------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.site-title a:hover,
+.main-navigation a,
+.main-navigation ul li.menu-item-has-children:before,
+.main-navigation ul li.flexMenu-viewMore:before,
+.midle-header-right ul li.menu-item-has-children:before,
+.card-title,
+.footer-bottom-wrap a:hover,
+.page-title-wrap a:hover,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+button,
+input,
+select,
+optgroup,
+textarea,
+.entry-meta > div:before {
+  color: $secondary_color;
+}
+.site-footer,
+.top-header,
+.search-toggle:hover,
+.back-to-top,
+.news-on-tab .tab-list li,
+.top-header-item .top-header-menu ul .flexMenu-viewMore ul,
+.social-links .follow-us:hover {
+  background-color: $secondary_color;
+}
+
+/*------------------------
+border-color
+-------------------------*/
+
+hr,
+pre,
+blockquote,
+.widget-post-author {
+  background-color: $border_color;
+}
+
+abbr,
+acronym,
+.navbar,
+.search-header form,
+.search-header form:before,
+.slides-post .post-content,
+.slides-post .post-content,
+.main-navigation ul.sub-menu li,
+.main-navigation ul li.flexMenu-viewMore ul li,
+.single-post article {
+  border-color: $border_color;
+}
+
+/*-----------------------------
+color in responsive design
+-------------------------------*/
+@media screen and (max-width: 1140px) {
+  .news-on-tab .tab-list {
+    border-color: $primary_color;
+  }
+}
+@media screen and (max-width: 640px) {
+  .full-banner-slider figure + .post-content .entry-title a,
+  .full-banner-slider figure + .post-content .entry-meta a {
+    color: $secondary_color;
+  }
+  .full-banner-slider figure + .post-content .entry-title a:hover,
+  .full-banner-slider figure + .post-content .entry-meta a:hover {
+    color: $primary_color;
+  }
+  .full-banner-slider figure + .post-content .entry-meta,
+  .full-banner-slider figure + .post-content .entry-content {
+    color: $border_color;
+  }
+}

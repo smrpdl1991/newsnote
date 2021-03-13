@@ -1,0 +1,125 @@
+.footer-content-holder {
+  padding: 70px 0;
+
+  .widget-holder {
+    margin: 0 -15px;
+    @include flexbox();
+    @include flex-wrap(wrap);
+  }
+
+  .widget-wrap {
+    @include col-size($max-size: max-width, $col-total: 3, $space: 30px);
+    @media screen and (max-width: 768px) {
+      @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+    }
+
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    .widget {
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &:last-child {
+      &:nth-last-of-type(1) {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom-wrap {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  margin: 0 -15px;
+  font-size: 14px;
+  padding: 10px 0;
+
+  .footer-bottom-left {
+    text-align: left;
+  }
+  .footer-bottom-right {
+    text-align: right;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-right {
+    @include col-size($max-size: max-width, $col-total: 2, $space: 30px);
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    @media screen and (max-width: 768px) {
+      @include col-size($max-size: max-width, $col-total: 1, $space: 30px);
+      text-align: center;
+    }
+  }
+
+  .footer-menu {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        vertical-align: center;
+        margin-right: 10px;
+        position: relative;
+
+        &:nth-last-of-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      .flexMenu-viewMore {
+        ul {
+          right: 0;
+          bottom: 100%;
+          background-color: #1a1d20;
+          width: 200px;
+
+          li {
+            display: block;
+            width: 100%;
+
+            a {
+              width: 100%;
+              text-align: left;
+              padding: 5px 15px;
+              display: block;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-footer .widget.widget_categories ul li,
+.site-footer .widget.widget_recent_entries ul li,
+.site-footer .widget.widget_recent_comments ul li,
+.site-footer .widget.widget_meta ul li,
+.site-footer .widget.widget_pages ul li,
+.site-footer .widget.widget_rss ul li,
+.site-footer .widget.widget_archive ul li{
+  background-color:transparent;
+  padding:0;
+  box-shadow:none;
+}
+.site-footer  .widget.widget_nav_menu .menu{
+    margin-left:0;
+    padding-left:0;
+}
+
+

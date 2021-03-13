@@ -1,0 +1,66 @@
+p {
+	margin-top:0;
+	margin-bottom: 15px;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+    margin: 0 0;
+    text-align: center;
+    position: relative;
+    padding:30px;
+    font-style:italic;
+
+    p, cite{
+    	position: relative;
+    }
+
+    cite{
+        font-style: normal;
+    	text-transform:uppercase;
+
+    	&:before{
+    	    content:'-';
+		    margin-right:3px;
+		    display: inline-block;
+		    vertical-align: middle;
+    	}
+    }
+}
+
+address {
+	margin: 0 0 30px;
+}
+
+pre {
+	font-family: $font__pre;
+	@include font-size(0.9375);
+	line-height: $font__line-height-pre;
+	margin-bottom: 30px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 0;
+	color:#fff;
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+	@include font-size(0.9375);
+}
+
+abbr, acronym {
+	border-style:solid;
+	border-width:0 0 1px 0;
+	cursor: help;
+}
+
+mark, ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
