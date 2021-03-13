@@ -1,0 +1,22 @@
+Newsnote Pro
+Newsnote Pro will have additional feature as follows:
+
+menu will have tooltip option
+popular tag option in header
+header color
+header fixed option in the top
+Ticker  layout 1 with  direction up and down option (In free version –  up direction only)
+ Ticker layout 2 with direction left -to-right and right-to-left ( In free version – there is right-to-left)
+back to top icon in the bottom of theme will have 3 different layout with color, font and image upload option.
+Additional and theme color option
+masonery layout in the blog and archive page will have the same other option as it is now in masonery widget(with/without space and content position option)
+The position of widget holder in the home page will be movable and can be put accordingly as required
+Woocommerce compatible
+facebook widget
+twitter widget
+post reaction
+google font option
+font-size option
+social share option for post
+each post and page will have their unique sidebar choosing option(in free – we have to choose globally)
+free support with most priority
